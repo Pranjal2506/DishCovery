@@ -13,7 +13,7 @@ export default function DishNameInput() {
 
     try {
       setLoading(true)
-      const response = await axios.post('http://localhost:5000/describe_dish', {
+      const response = await axios.post('https://dishcovery-fqe5.onrender.com/describe_dish', {
         description: description.trim()
       })
       setSuggestions(response.data.dishes)
