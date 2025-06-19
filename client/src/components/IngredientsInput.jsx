@@ -17,7 +17,7 @@ export default function IngredientsInput() {
 
     setLoading(true)
     try {
-      const response = await axios.post('http://localhost:5000/suggest_dishes_ingredients', { input })
+      const response = await axios.post('https://dishcovery-fqe5.onrender.com/suggest_dishes_ingredients', { input })
       setSuggestions(response.data.dishes)
     } catch (error) {
       console.error('Suggestion error:', error)
