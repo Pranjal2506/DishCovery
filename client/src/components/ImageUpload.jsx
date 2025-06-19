@@ -28,7 +28,7 @@ const ImageUpload = () => {
     try {
       const formData = new FormData()
       formData.append('image', selectedImage)
-      const { data } = await axios.post('http://localhost:5000/suggest_dishes_image', formData, {
+      const { data } = await axios.post('https://dishcovery-fqe5.onrender.com/suggest_dishes_image', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
       setResult(data)
