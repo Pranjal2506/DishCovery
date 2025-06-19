@@ -7,7 +7,7 @@ import IngredientsInput from '../components/IngredientsInput'
 const Home = () => {
 
   useEffect(() => {
-    axios.get('http://localhost:5000/ping')
+    axios.get('https://dishcovery-fqe5.onrender.com/ping')
     .then(response =>{
       console.log('Ping response:', response.data.message)
     })
