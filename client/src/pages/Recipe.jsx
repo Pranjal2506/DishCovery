@@ -12,7 +12,7 @@ export default function DishDetails() {
   useEffect(() => {
     const fetchDishDetails = async () => {
       try {
-        const response = await axios.post("http://localhost:5000/detailed_dish", {
+        const response = await axios.post("https://dishcovery-fqe5.onrender.com/detailed_dish", {
           dishname: decodedDish
         });
         setRecipe(response.data)
