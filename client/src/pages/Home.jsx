@@ -35,14 +35,14 @@ const Home = () => {
         {/* Upload Image */}
         <div className="flex-1 bg-white/95 border-2 border-rose-100 rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:shadow-rose-200 transition duration-300">
           <h2 className="text-2xl font-bold text-rose-500 mb-4 tracking-wide flex items-center gap-2">
-            <span role="img" aria-label="camera">📷</span> Upload a Dish Image
+            <span role="img" aria-label="camera">📷</span> Upload a Photo, Get the Recipe.
           </h2>
           <ImageUpload />
         </div>
         {/* Discover by Ingredients */}
         <div className="flex-1 bg-white/95 border-2 border-amber-100 rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:shadow-amber-200 transition duration-300">
           <h2 className="text-2xl font-bold text-amber-500 mb-4 tracking-wide flex items-center gap-2">
-            <span role="img" aria-label="sparkles">✨</span> Get Dish with what you have!
+            <span role="img" aria-label="sparkles">✨</span> What Can I Cook with What I Have?
           </h2>
           <IngredientsInput />
         </div>
